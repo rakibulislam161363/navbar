@@ -1,0 +1,64 @@
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #000; /* আন্ডারলাইনের রঙ */
+  transition: width 0.4s ease, left 0.4s ease;
+} 
+
+ nav ul li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 50%;  /* শুরুতে মাঝখানে থাকবে */
+  bottom: 0;
+  background-color: #000;  /* আন্ডারলাইনের রঙ */
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;  /* পুরো প্রস্থ জুড়ে প্রসারিত হবে */
+  left: 0;  /* প্রান্ত থেকে শুরু করে পুরো আকারে দেখাবে */
+}
